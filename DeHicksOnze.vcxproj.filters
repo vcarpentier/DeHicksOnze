@@ -33,6 +33,9 @@
     <ClInclude Include="GraphicSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="D3DUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DeHicksOnze.cpp">

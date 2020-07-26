@@ -42,9 +42,13 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     param.width = windowClientRect.right;
     param.height = windowClientRect.bottom;
     param.fullscreen = false;
+    param.enableMSAA = false;
     param.windowHandle = windowHandle;
     GraphicSystem* gs = new GraphicSystem();
-    gs->Initialize(param);
+    if (!gs->Initialize(param))
+    {
+        return -1;
+    }
 
     MSG msg;
 
